@@ -1,0 +1,33 @@
+NOTICE
+======
+
+This repository contains documentation reproduced from Google Search Central:
+
+    https://developers.google.com/search/docs
+
+Copyright Google LLC.
+
+That content is licensed under the Creative Commons Attribution 4.0 License:
+
+    https://creativecommons.org/licenses/by/4.0/
+
+Under the terms of that license you are free to share and adapt the material for
+any purpose, including commercially, provided you give appropriate credit,
+provide a link to the license, and indicate if changes were made.
+
+Changes made in this repository
+-------------------------------
+- Content converted from HTML to Markdown
+- Pages reorganized into a numbered directory structure
+- Navigation chrome, page furniture, and interactive widgets removed
+
+No changes have been made to the substance of Google's guidance. Where this
+repository and the official documentation disagree, the official documentation
+at developers.google.com/search/docs is authoritative.
+
+This repository is an independent project. It is not affiliated with, endorsed
+by, or sponsored by Google LLC. Google, Google Search, and Google Search Central
+are trademarks of Google LLC.
+
+Any original material in this repository (README, organizational structure,
+tooling, and scripts) is released under the same CC BY 4.0 terms.
