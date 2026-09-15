@@ -110,6 +110,43 @@ loaded as plain project context:
 - **Codex / Cursor / other AGENTS.md agents**: just ask the SEO question directly;
   if it doesn't check the docs on its own, point it at `SKILL.md` explicitly.
 
+### Uninstall
+
+Same installer, same menu, with `--uninstall` added. Interactively:
+
+```bash
+node bin/install.js --uninstall
+```
+
+```
+Where do you want to remove the "google-seo-docs" skill from?
+
+  1) This project only     -> .claude/skills/google-seo-docs   (Claude Code)
+  2) All your projects     -> ~/.claude/skills/google-seo-docs (Claude Code, global)
+  3) AGENTS.md reference    -> for Codex, Cursor, Windsurf, or any agent without a skills folder
+  4) All of the above
+
+Choose one or more, comma-separated [1]:
+```
+
+It asks you to confirm each deletion before it happens. Removing the `AGENTS.md`
+reference only deletes the one line it added — any other content in that file is
+left untouched (and the file itself is only deleted if that line was the entire
+contents).
+
+Non-interactively (skips confirmation):
+
+```bash
+node bin/install.js --uninstall --project --yes      # this project, current directory
+node bin/install.js --uninstall --global --yes        # ~/.claude/skills, all projects
+node bin/install.js --uninstall --agents-md --yes     # drop the AGENTS.md reference
+node bin/install.js --uninstall --project --global --agents-md --yes   # remove everywhere
+```
+
+**Claude.ai / Claude Desktop**: Settings → Capabilities → Skills → find
+"google-seo-docs" → remove it. There's no file to clean up locally since it was
+uploaded as a zip.
+
 ## Roadmap
 
 - [ ] Complete sections 4-6

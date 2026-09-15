@@ -17,6 +17,7 @@ const EXCLUDE = new Set([
   'bin',
   'package.json',
   'package-lock.json',
+  '.github',
   '.DS_Store',
   '.gitignore',
 ]);
@@ -26,6 +27,7 @@ function parseArgs(argv) {
   for (const raw of argv) {
     if (raw === '--help' || raw === '-h') args.help = true;
     else if (raw === '--yes' || raw === '-y') args.yes = true;
+    else if (raw === '--uninstall' || raw === '-u') args.uninstall = true;
     else if (raw === '--global' || raw === '-g') args.global = true;
     else if (raw === '--agents-md') args.agentsMd = true;
     else if (raw.startsWith('--project=')) args.project = raw.slice('--project='.length);
@@ -42,23 +44,31 @@ function printHelp() {
 Google SEO Docs — Skill Installer
 
 Usage:
-  node bin/install.js                      Interactive mode (asks project vs global)
-  npx github:usamaramzan978/google-seo-docs Interactive mode, no clone needed
+  node bin/install.js                      Interactive install (asks project vs global)
+  node bin/install.js --uninstall          Interactive removal
+  npx github:usamaramzan978/google-seo-docs Interactive install, no clone needed
 
 Flags (non-interactive):
-  --project[=<dir>]   Install into <dir>/.claude/skills/${DEFAULT_SKILL_NAME} (default dir: cwd)
-  --global            Install into ~/.claude/skills/${DEFAULT_SKILL_NAME} (all your projects)
-  --agents-md[=<dir>] Append a reference to <dir>/AGENTS.md instead (for Codex, Cursor, etc.)
+  --project[=<dir>]   Install/remove <dir>/.claude/skills/${DEFAULT_SKILL_NAME} (default dir: cwd)
+  --global            Install/remove ~/.claude/skills/${DEFAULT_SKILL_NAME} (all your projects)
+  --agents-md[=<dir>] Add/remove the reference in <dir>/AGENTS.md (Codex, Cursor, etc.)
+  --uninstall, -u     Remove instead of install
   --name=<name>       Use a custom skill folder name (default: ${DEFAULT_SKILL_NAME})
-  --yes, -y           Don't ask before overwriting an existing install
+  --yes, -y           Don't ask before overwriting an existing install, or before deleting
   --help, -h          Show this help
 
-With no flags, you'll be asked interactively which of the above you want —
-you can pick more than one.
+With no target flags, you'll be asked interactively which of the above you want —
+you can pick more than one. Add --uninstall to the interactive run to remove
+instead of install.
+
+Examples:
+  node bin/install.js --project --global              # install both, this project + global
+  node bin/install.js --uninstall --global --yes      # remove the global copy, no prompt
+  node bin/install.js --uninstall --agents-md --yes   # drop the AGENTS.md reference
 `);
 }
 
-function copySkill(destDir, { yes }) {
+function copySkill(destDir) {
   if (fs.existsSync(destDir)) {
     return { skipped: true, destDir };
   }
@@ -75,12 +85,21 @@ function copySkill(destDir, { yes }) {
   return { skipped: false, destDir };
 }
 
+function removeSkill(destDir) {
+  if (!fs.existsSync(destDir)) {
+    return { removed: false, destDir };
+  }
+  fs.rmSync(destDir, { recursive: true, force: true });
+  return { removed: true, destDir };
+}
+
+const AGENTS_MD_MARKER = 'Google SEO Docs skill';
+
 function appendAgentsMd(projectDir, skillMdPath) {
   const agentsPath = path.join(projectDir, 'AGENTS.md');
   const line = `See [Google SEO Docs skill](${skillMdPath}) for Google Search Central / SEO reference documentation (crawling, indexing, structured data, ranking, Search Console, etc.) — read it before answering SEO questions.`;
-  const marker = 'Google SEO Docs skill';
   let existing = fs.existsSync(agentsPath) ? fs.readFileSync(agentsPath, 'utf8') : '';
-  if (existing.includes(marker)) {
+  if (existing.includes(AGENTS_MD_MARKER)) {
     return { updated: false, agentsPath };
   }
   const sep = existing.length > 0 && !existing.endsWith('\n') ? '\n\n' : existing.length > 0 ? '\n' : '';
@@ -88,9 +107,44 @@ function appendAgentsMd(projectDir, skillMdPath) {
   return { updated: true, agentsPath };
 }
 
-async function promptMenu(rl) {
+function removeAgentsMdReference(projectDir) {
+  const agentsPath = path.join(projectDir, 'AGENTS.md');
+  if (!fs.existsSync(agentsPath)) {
+    return { removed: false, agentsPath, reason: 'no AGENTS.md found' };
+  }
+  const original = fs.readFileSync(agentsPath, 'utf8');
+  if (!original.includes(AGENTS_MD_MARKER)) {
+    return { removed: false, agentsPath, reason: 'not referenced' };
+  }
+
+  const kept = original.split('\n').filter((line) => !line.includes(AGENTS_MD_MARKER));
+  // Collapse runs of blank lines left behind, and trim leading/trailing blanks.
+  const collapsed = [];
+  for (const line of kept) {
+    if (line.trim() === '' && collapsed[collapsed.length - 1]?.trim() === '') continue;
+    collapsed.push(line);
+  }
+  while (collapsed.length && collapsed[0].trim() === '') collapsed.shift();
+  while (collapsed.length && collapsed[collapsed.length - 1].trim() === '') collapsed.pop();
+
+  if (collapsed.length === 0) {
+    fs.unlinkSync(agentsPath);
+    return { removed: true, agentsPath, deletedFile: true };
+  }
+  fs.writeFileSync(agentsPath, collapsed.join('\n') + '\n');
+  return { removed: true, agentsPath, deletedFile: false };
+}
+
+async function confirm(rl, message) {
+  const answer = (await rl.question(`${message} [y/N]: `)).trim().toLowerCase();
+  return answer === 'y' || answer === 'yes';
+}
+
+async function promptTargetMenu(rl, action) {
+  const verb = action === 'uninstall' ? 'remove' : 'install';
+  const preposition = action === 'uninstall' ? ' from' : '';
   console.log(`
-Where do you want to install the "${DEFAULT_SKILL_NAME}" skill?
+Where do you want to ${verb} the "${DEFAULT_SKILL_NAME}" skill${preposition}?
 
   1) This project only     -> .claude/skills/${DEFAULT_SKILL_NAME}   (Claude Code)
   2) All your projects     -> ~/.claude/skills/${DEFAULT_SKILL_NAME} (Claude Code, global)
@@ -124,27 +178,38 @@ async function main() {
     return;
   }
 
+  const action = args.uninstall ? 'uninstall' : 'install';
   const skillName = args.name || DEFAULT_SKILL_NAME;
   const targets = new Set();
   let projectDir = args.project;
   let agentsDir = args.agentsMdDir || args.project;
 
   const hasExplicitFlags = args.project !== undefined || args.global || args.agentsMd;
+  const needsInteractiveMenu = !hasExplicitFlags;
+  const needsConfirmPrompts = action === 'uninstall' && !args.yes;
 
-  if (hasExplicitFlags) {
-    if (args.project !== undefined) targets.add('project');
-    if (args.global) targets.add('global');
-    if (args.agentsMd) targets.add('agents');
-  } else {
+  let rl = null;
+  if (needsInteractiveMenu || needsConfirmPrompts) {
     if (!stdin.isTTY) {
-      console.error('No install target specified and no interactive terminal detected.');
-      printHelp();
+      if (needsInteractiveMenu) {
+        console.error('No install target specified and no interactive terminal detected.');
+        printHelp();
+      } else {
+        console.error('--uninstall needs --yes when run non-interactively.');
+      }
       process.exitCode = 1;
       return;
     }
-    const rl = readline.createInterface({ input: stdin, output: stdout });
-    try {
-      const chosen = await promptMenu(rl);
+    rl = readline.createInterface({ input: stdin, output: stdout });
+  }
+
+  try {
+    if (hasExplicitFlags) {
+      if (args.project !== undefined) targets.add('project');
+      if (args.global) targets.add('global');
+      if (args.agentsMd) targets.add('agents');
+    } else {
+      const chosen = await promptTargetMenu(rl, action);
       chosen.forEach((t) => targets.add(t));
       if (targets.has('project') && !projectDir) {
         const answer = (await rl.question(`Project directory [${process.cwd()}]: `)).trim();
@@ -153,38 +218,68 @@ async function main() {
       if (targets.has('agents') && !agentsDir) {
         agentsDir = projectDir || (await rl.question(`Project directory for AGENTS.md [${process.cwd()}]: `)).trim() || process.cwd();
       }
-    } finally {
-      rl.close();
     }
-  }
 
-  projectDir = path.resolve(projectDir || process.cwd());
-  agentsDir = path.resolve(agentsDir || projectDir);
+    projectDir = path.resolve(projectDir || process.cwd());
+    agentsDir = path.resolve(agentsDir || projectDir);
 
-  const results = [];
+    const results = [];
 
-  if (targets.has('project')) {
-    const dest = path.join(projectDir, '.claude', 'skills', skillName);
-    const res = copySkill(dest, args);
-    results.push(`  ${res.skipped ? '(already installed, skipped)' : 'installed'} -> ${dest}`);
-  }
+    async function removeWithConfirm(dest) {
+      if (!fs.existsSync(dest)) {
+        results.push(`  (not installed) -> ${dest}`);
+        return;
+      }
+      if (!args.yes && rl && !(await confirm(rl, `Remove ${dest}?`))) {
+        results.push(`  (skipped) -> ${dest}`);
+        return;
+      }
+      removeSkill(dest);
+      results.push(`  removed -> ${dest}`);
+    }
 
-  if (targets.has('global')) {
-    const dest = path.join(os.homedir(), '.claude', 'skills', skillName);
-    const res = copySkill(dest, args);
-    results.push(`  ${res.skipped ? '(already installed, skipped)' : 'installed'} -> ${dest}`);
-  }
+    if (targets.has('project')) {
+      const dest = path.join(projectDir, '.claude', 'skills', skillName);
+      if (action === 'uninstall') {
+        await removeWithConfirm(dest);
+      } else {
+        const res = copySkill(dest);
+        results.push(`  ${res.skipped ? '(already installed, skipped)' : 'installed'} -> ${dest}`);
+      }
+    }
 
-  if (targets.has('agents')) {
-    const projectSkillMd = path.join(projectDir, '.claude', 'skills', skillName, 'SKILL.md');
-    const skillMdPath = fs.existsSync(projectSkillMd) ? projectSkillMd : path.join(SOURCE_ROOT, 'SKILL.md');
-    const res = appendAgentsMd(agentsDir, skillMdPath);
-    results.push(`  ${res.updated ? 'added reference to' : '(already referenced in)'} -> ${res.agentsPath}`);
-  }
+    if (targets.has('global')) {
+      const dest = path.join(os.homedir(), '.claude', 'skills', skillName);
+      if (action === 'uninstall') {
+        await removeWithConfirm(dest);
+      } else {
+        const res = copySkill(dest);
+        results.push(`  ${res.skipped ? '(already installed, skipped)' : 'installed'} -> ${dest}`);
+      }
+    }
 
-  console.log('\nDone:\n' + results.join('\n'));
-  if (targets.has('project') || targets.has('global')) {
-    console.log('\nRestart Claude Code (or start a new session) to pick it up.');
+    if (targets.has('agents')) {
+      if (action === 'uninstall') {
+        if (!args.yes && rl && !(await confirm(rl, `Remove the skill reference from ${path.join(agentsDir, 'AGENTS.md')}?`))) {
+          results.push(`  (skipped) -> ${path.join(agentsDir, 'AGENTS.md')}`);
+        } else {
+          const res = removeAgentsMdReference(agentsDir);
+          results.push(`  ${res.removed ? 'removed reference from' : `(${res.reason})`} -> ${res.agentsPath}`);
+        }
+      } else {
+        const projectSkillMd = path.join(projectDir, '.claude', 'skills', skillName, 'SKILL.md');
+        const skillMdPath = fs.existsSync(projectSkillMd) ? projectSkillMd : path.join(SOURCE_ROOT, 'SKILL.md');
+        const res = appendAgentsMd(agentsDir, skillMdPath);
+        results.push(`  ${res.updated ? 'added reference to' : '(already referenced in)'} -> ${res.agentsPath}`);
+      }
+    }
+
+    console.log('\nDone:\n' + results.join('\n'));
+    if (targets.has('project') || targets.has('global')) {
+      console.log('\nRestart Claude Code (or start a new session) for the change to take effect.');
+    }
+  } finally {
+    if (rl) rl.close();
   }
 }
 
