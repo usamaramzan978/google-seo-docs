@@ -22,6 +22,9 @@ const EXCLUDE = new Set([
   '.gitignore',
 ]);
 
+const UNINSTALL_WORDS = new Set(['uninstall', 'remove', 'rm', 'delete']);
+const INSTALL_WORDS = new Set(['install', 'add']);
+
 function parseArgs(argv) {
   const args = { _: [] };
   for (const raw of argv) {
@@ -36,6 +39,14 @@ function parseArgs(argv) {
     else if (raw.startsWith('--name=')) args.name = raw.slice('--name='.length);
     else args._.push(raw);
   }
+  // Plain subcommand form: `google-seo-docs uninstall`, `google-seo-docs remove`, etc.
+  const sub = args._[0]?.toLowerCase();
+  if (UNINSTALL_WORDS.has(sub)) args.uninstall = true;
+  else if (sub !== undefined && !INSTALL_WORDS.has(sub)) {
+    console.error(`Unknown command "${args._[0]}". Expected "install" or "uninstall".\n`);
+    args.help = true;
+    args.helpExitCode = 1;
+  }
   return args;
 }
 
@@ -44,27 +55,26 @@ function printHelp() {
 Google SEO Docs — Skill Installer
 
 Usage:
-  node bin/install.js                      Interactive install (asks project vs global)
-  node bin/install.js --uninstall          Interactive removal
-  npx github:usamaramzan978/google-seo-docs Interactive install, no clone needed
+  npx github:usamaramzan978/google-seo-docs            Interactive install
+  npx github:usamaramzan978/google-seo-docs uninstall  Interactive removal
 
-Flags (non-interactive):
+  (already cloned this repo? swap the npx line for: node bin/install.js [uninstall])
+
+Flags (non-interactive, add to either command above):
   --project[=<dir>]   Install/remove <dir>/.claude/skills/${DEFAULT_SKILL_NAME} (default dir: cwd)
   --global            Install/remove ~/.claude/skills/${DEFAULT_SKILL_NAME} (all your projects)
   --agents-md[=<dir>] Add/remove the reference in <dir>/AGENTS.md (Codex, Cursor, etc.)
-  --uninstall, -u     Remove instead of install
   --name=<name>       Use a custom skill folder name (default: ${DEFAULT_SKILL_NAME})
   --yes, -y           Don't ask before overwriting an existing install, or before deleting
   --help, -h          Show this help
 
 With no target flags, you'll be asked interactively which of the above you want —
-you can pick more than one. Add --uninstall to the interactive run to remove
-instead of install.
+you can pick more than one.
 
 Examples:
-  node bin/install.js --project --global              # install both, this project + global
-  node bin/install.js --uninstall --global --yes      # remove the global copy, no prompt
-  node bin/install.js --uninstall --agents-md --yes   # drop the AGENTS.md reference
+  npx github:usamaramzan978/google-seo-docs --project --global
+  npx github:usamaramzan978/google-seo-docs uninstall --global --yes
+  npx github:usamaramzan978/google-seo-docs uninstall --agents-md --yes
 `);
 }
 
@@ -175,6 +185,7 @@ async function main() {
   const args = parseArgs(process.argv.slice(2));
   if (args.help) {
     printHelp();
+    if (args.helpExitCode) process.exitCode = args.helpExitCode;
     return;
   }
 

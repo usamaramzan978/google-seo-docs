@@ -47,6 +47,8 @@ reads only the specific doc it needs instead of the whole corpus.
    ```bash
    node bin/install.js
    ```
+   Either form also takes `uninstall` as the first word later on (see
+   [Uninstall](#uninstall)) — same command, same menu, just removes instead.
 4. Answer the prompt:
    ```
    Where do you want to install the "google-seo-docs" skill?
@@ -69,7 +71,9 @@ reads only the specific doc it needs instead of the whole corpus.
 Re-running the installer later is safe: it skips anything already installed
 instead of overwriting it.
 
-**Scripting it instead of answering prompts** (CI, dotfiles, etc.):
+**Scripting it instead of answering prompts** (CI, dotfiles, etc.) — works the same
+whether you run it as `npx github:usamaramzan978/google-seo-docs` or, from a clone,
+`node bin/install.js`:
 ```bash
 node bin/install.js --project              # this project, current directory
 node bin/install.js --global                # ~/.claude/skills, all projects
@@ -112,10 +116,14 @@ loaded as plain project context:
 
 ### Uninstall
 
-Same installer, same menu, with `--uninstall` added. Interactively:
+Same command as install, with `uninstall` (or `remove`) as the first word:
 
 ```bash
-node bin/install.js --uninstall
+# without cloning
+npx github:usamaramzan978/google-seo-docs uninstall
+
+# from a local clone
+node bin/install.js uninstall
 ```
 
 ```
@@ -137,11 +145,16 @@ contents).
 Non-interactively (skips confirmation):
 
 ```bash
-node bin/install.js --uninstall --project --yes      # this project, current directory
-node bin/install.js --uninstall --global --yes        # ~/.claude/skills, all projects
-node bin/install.js --uninstall --agents-md --yes     # drop the AGENTS.md reference
-node bin/install.js --uninstall --project --global --agents-md --yes   # remove everywhere
+node bin/install.js uninstall --project --yes      # this project, current directory
+node bin/install.js uninstall --global --yes        # ~/.claude/skills, all projects
+node bin/install.js uninstall --agents-md --yes     # drop the AGENTS.md reference
+node bin/install.js uninstall --project --global --agents-md --yes   # remove everywhere
 ```
+
+Running it from inside a project that already has the skill installed? `bin/`
+isn't part of what gets copied in, so `node bin/install.js` won't resolve from
+there — either `cd` back to wherever you cloned this repo first, or use the
+`npx github:...` form, which doesn't care what directory you're in.
 
 **Claude.ai / Claude Desktop**: Settings → Capabilities → Skills → find
 "google-seo-docs" → remove it. There's no file to clean up locally since it was
