@@ -2,13 +2,14 @@
   "name": "google-seo-docs",
   "version": "1.0.0",
   "description": "Google Search Central documentation mirrored as Markdown, packaged as an installable Agent Skill (Claude Code, Claude.ai, and AGENTS.md-based agents like Codex/Cursor).",
-  "license": "MIT",
+  "license": "CC-BY-4.0",
   "private": true,
   "bin": {
     "google-seo-docs": "bin/install.js"
   },
   "scripts": {
-    "install-skill": "node bin/install.js"
+    "install-skill": "node bin/install.js",
+    "check-links": "node bin/check-links.js"
   },
   "files": [
     "bin",

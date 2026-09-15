@@ -120,6 +120,17 @@ loaded as plain project context:
 
 Found a doc that's out of date with the official version? Open an issue with the page URL, or a PR with the refreshed Markdown.
 
+Adding, renaming, or removing a `.md` file under any of the six numbered
+sections? Update [SKILL.md](SKILL.md)'s index to match, then run:
+
+```bash
+npm run check-links
+```
+
+It flags any link in `SKILL.md` pointing at a file that no longer exists, and
+any content file that isn't indexed yet. CI doesn't run this automatically —
+run it yourself before opening a PR.
+
 ## License and attribution
 
 The documentation content in this repository is authored by Google and published on
