@@ -9,7 +9,8 @@
   },
   "scripts": {
     "install-skill": "node bin/install.js",
-    "check-links": "node bin/check-links.js"
+    "check-links": "node bin/check-links.js",
+    "test": "node --test"
   },
   "files": [
     "bin",

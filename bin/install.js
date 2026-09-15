@@ -15,6 +15,7 @@ const EXCLUDE = new Set([
   '.git',
   'node_modules',
   'bin',
+  'test',
   'package.json',
   'package-lock.json',
   '.github',
@@ -31,6 +32,7 @@ function parseArgs(argv) {
     if (raw === '--help' || raw === '-h') args.help = true;
     else if (raw === '--yes' || raw === '-y') args.yes = true;
     else if (raw === '--uninstall' || raw === '-u') args.uninstall = true;
+    else if (raw === '--update' || raw === '-U') args.update = true;
     else if (raw === '--global' || raw === '-g') args.global = true;
     else if (raw === '--agents-md') args.agentsMd = true;
     else if (raw.startsWith('--project=')) args.project = raw.slice('--project='.length);
@@ -64,23 +66,32 @@ Flags (non-interactive, add to either command above):
   --project[=<dir>]   Install/remove <dir>/.claude/skills/${DEFAULT_SKILL_NAME} (default dir: cwd)
   --global            Install/remove ~/.claude/skills/${DEFAULT_SKILL_NAME} (all your projects)
   --agents-md[=<dir>] Add/remove the reference in <dir>/AGENTS.md (Codex, Cursor, etc.)
+  --update, -U        Already installed? Replace it with the latest content instead of skipping
   --name=<name>       Use a custom skill folder name (default: ${DEFAULT_SKILL_NAME})
-  --yes, -y           Don't ask before overwriting an existing install, or before deleting
+  --yes, -y           Don't ask before updating an existing install, or before deleting
   --help, -h          Show this help
 
 With no target flags, you'll be asked interactively which of the above you want —
-you can pick more than one.
+you can pick more than one. Installing over an existing copy asks whether to
+update it (unless --update or --yes is given); uninstalling always asks before
+deleting (unless --yes is given).
 
 Examples:
   npx github:usamaramzan978/google-seo-docs --project --global
+  npx github:usamaramzan978/google-seo-docs --project --update --yes   # refresh to latest content
   npx github:usamaramzan978/google-seo-docs uninstall --global --yes
   npx github:usamaramzan978/google-seo-docs uninstall --agents-md --yes
 `);
 }
 
-function copySkill(destDir) {
-  if (fs.existsSync(destDir)) {
-    return { skipped: true, destDir };
+function copySkill(destDir, update) {
+  const existed = fs.existsSync(destDir);
+  if (existed && !update) {
+    return { status: 'skipped', destDir };
+  }
+  if (existed) {
+    // Replace rather than merge, so files removed upstream don't linger.
+    fs.rmSync(destDir, { recursive: true, force: true });
   }
   fs.mkdirSync(path.dirname(destDir), { recursive: true });
   fs.cpSync(SOURCE_ROOT, destDir, {
@@ -92,7 +103,7 @@ function copySkill(destDir) {
       return !EXCLUDE.has(top);
     },
   });
-  return { skipped: false, destDir };
+  return { status: existed ? 'updated' : 'installed', destDir };
 }
 
 function removeSkill(destDir) {
@@ -197,20 +208,24 @@ async function main() {
 
   const hasExplicitFlags = args.project !== undefined || args.global || args.agentsMd;
   const needsInteractiveMenu = !hasExplicitFlags;
-  const needsConfirmPrompts = action === 'uninstall' && !args.yes;
 
   let rl = null;
-  if (needsInteractiveMenu || needsConfirmPrompts) {
-    if (!stdin.isTTY) {
-      if (needsInteractiveMenu) {
-        console.error('No install target specified and no interactive terminal detected.');
-        printHelp();
-      } else {
-        console.error('--uninstall needs --yes when run non-interactively.');
-      }
+  if (!stdin.isTTY) {
+    if (needsInteractiveMenu) {
+      console.error('No install target specified and no interactive terminal detected.');
+      printHelp();
       process.exitCode = 1;
       return;
     }
+    if (action === 'uninstall' && !args.yes) {
+      console.error('--uninstall needs --yes when run non-interactively.');
+      process.exitCode = 1;
+      return;
+    }
+    // action === 'install' without --yes, non-interactive: proceed with rl left
+    // null — any target that's already installed is skipped, since there's no
+    // way to ask and --update wasn't explicitly passed.
+  } else if (needsInteractiveMenu || !args.yes) {
     rl = readline.createInterface({ input: stdin, output: stdout });
   }
 
@@ -249,13 +264,29 @@ async function main() {
       results.push(`  removed -> ${dest}`);
     }
 
+    async function installOrUpdate(dest) {
+      let update = Boolean(args.update);
+      if (!update && fs.existsSync(dest)) {
+        if (args.yes) {
+          update = true;
+        } else if (rl) {
+          update = await confirm(rl, `Already installed at ${dest}. Update to the latest version?`);
+        }
+      }
+      const res = copySkill(dest, update);
+      const label =
+        res.status === 'skipped'
+          ? '(already installed, skipped — pass --update to refresh)'
+          : res.status;
+      results.push(`  ${label} -> ${dest}`);
+    }
+
     if (targets.has('project')) {
       const dest = path.join(projectDir, '.claude', 'skills', skillName);
       if (action === 'uninstall') {
         await removeWithConfirm(dest);
       } else {
-        const res = copySkill(dest);
-        results.push(`  ${res.skipped ? '(already installed, skipped)' : 'installed'} -> ${dest}`);
+        await installOrUpdate(dest);
       }
     }
 
@@ -264,8 +295,7 @@ async function main() {
       if (action === 'uninstall') {
         await removeWithConfirm(dest);
       } else {
-        const res = copySkill(dest);
-        results.push(`  ${res.skipped ? '(already installed, skipped)' : 'installed'} -> ${dest}`);
+        await installOrUpdate(dest);
       }
     }
 
@@ -294,7 +324,21 @@ async function main() {
   }
 }
 
-main().catch((err) => {
-  console.error(err.stack || err.message || err);
-  process.exitCode = 1;
-});
+if (require.main === module) {
+  main().catch((err) => {
+    console.error(err.stack || err.message || err);
+    process.exitCode = 1;
+  });
+}
+
+module.exports = {
+  copySkill,
+  removeSkill,
+  appendAgentsMd,
+  removeAgentsMdReference,
+  parseArgs,
+  EXCLUDE,
+  SOURCE_ROOT,
+  DEFAULT_SKILL_NAME,
+  AGENTS_MD_MARKER,
+};

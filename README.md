@@ -71,8 +71,18 @@ reads only the specific doc it needs instead of the whole corpus.
 5. Restart Claude Code (or start a new session). The skill now shows up automatically
    — nothing else to configure.
 
-Re-running the installer later is safe: it skips anything already installed
-instead of overwriting it.
+Re-running the installer later is safe: by default it leaves an existing install
+alone rather than overwriting it. If this repo has picked up new content since you
+installed (check the [Roadmap](#roadmap) — sections 4-6 are still filling in) and
+you want the latest copy, either answer "y" when it asks, or force it:
+
+```bash
+node bin/install.js --project --update --yes   # replace this project's copy with the latest
+node bin/install.js --global --update --yes    # same, for the global copy
+```
+
+`--update` replaces the installed folder outright rather than merging, so anything
+that's been removed upstream since you installed gets cleaned up too.
 
 **Scripting it instead of answering prompts** (CI, dotfiles, etc.) — works the same
 whether you run it as `npx github:usamaramzan978/google-seo-docs` or, from a clone,
@@ -182,8 +192,19 @@ npm run check-links
 ```
 
 It flags any link in `SKILL.md` pointing at a file that no longer exists, and
-any content file that isn't indexed yet. CI doesn't run this automatically —
-run it yourself before opening a PR.
+any content file that isn't indexed yet. This also runs automatically in CI on
+every push and PR (`.github/workflows/ci.yml`), but run it yourself first so you
+don't have to wait on a failed check.
+
+Changed `bin/install.js`? Run the installer's own test suite:
+
+```bash
+npm test
+```
+
+It exercises install/update/uninstall and the `AGENTS.md` editing logic against
+temp directories (see [test/install.test.js](test/install.test.js)) — no network
+or real `.claude` folders touched. This also runs in CI alongside `check-links`.
 
 ## License and attribution
 
