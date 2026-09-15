@@ -88,13 +88,13 @@ read every file. Instead:
   - [Ask Google to Recrawl Your Website](<3 - Crawling and indexing/2 - Crawler management/1 - ask-google-to-recrawl.md>)
   - [Troubleshoot Google Search Crawling Errors](<3 - Crawling and indexing/2 - Crawler management/2 - troubleshoot-crawling-errors.md>)
   - **Google crawlers/**
-    - [List of Google crawlers](<3 - Crawling and indexing/2 - Crawler management/Google crawlers/1 - List of Google crawlers.md>)
+    - [List of Google Crawlers and Fetchers](<3 - Crawling and indexing/2 - Crawler management/Google crawlers/1 - List of Google crawlers.md>)
     - [What Is Googlebot](<3 - Crawling and indexing/2 - Crawler management/Google crawlers/2 - googlebot.md>)
-    - [Reduce the Google crawl rate](<3 - Crawling and indexing/2 - Crawler management/Google crawlers/3 - Reduce the Google crawl rate.md>)
-    - [Verifying Googlebot and other Google crawlers](<3 - Crawling and indexing/2 - Crawler management/Google crawlers/4 - Verifying Googlebot and other Google crawlers.md>)
+    - [Reduce Google's Crawl Rate](<3 - Crawling and indexing/2 - Crawler management/Google crawlers/3 - Reduce the Google crawl rate.md>)
+    - [Verify Googlebot and Other Google Crawlers](<3 - Crawling and indexing/2 - Crawler management/Google crawlers/4 - Verifying Googlebot and other Google crawlers.md>)
 - **3 - robots.txt/**
   - [Robots.txt Introduction and Guide](<3 - Crawling and indexing/3 - robots.txt/1 - intro.md>)
-  - [How Google interprets the robots txt](<3 - Crawling and indexing/3 - robots.txt/2 - How Google interprets the robots txt.md>)
+  - [How Google Interprets the robots.txt Specification](<3 - Crawling and indexing/3 - robots.txt/2 - How Google interprets the robots txt.md>)
 - **4 - canonicalization/**
   - [What is canonicalization](<3 - Crawling and indexing/4 - canonicalization/1 - index.md>)
   - [How to specify a canonical URL with rel="canonical" and other methods](<3 - Crawling and indexing/4 - canonicalization/2 - consolidate-duplicate-urls.md>)
@@ -146,17 +146,17 @@ read every file. Instead:
 - [Image SEO Best Practices](<4 - Ranking and search appearance/8 - google-images.md>)
 - [Help your readers find your site through preferred sources in Google Search](<4 - Ranking and search appearance/9 - preferred-sources.md>)
 - **Early Adopters Program/**
-  - [Package tracking](<4 - Ranking and search appearance/Early Adopters Program/Package tracking.md>)
+  - [Package Tracking on Google](<4 - Ranking and search appearance/Early Adopters Program/Package tracking.md>)
 - **Local features/**
   - [Add Business Details to Google](<4 - Ranking and search appearance/Local features/1 - establish-business-details.md>)
   - [Top Places List Optimization](<4 - Ranking and search appearance/Local features/2 - top-places-list.md>)
-  - [Opting out of local search results](<4 - Ranking and search appearance/Local features/3 - Opting out of local search results.md>)
+  - [Opt Out of Local Search Results and Other Google Properties](<4 - Ranking and search appearance/Local features/3 - Opting out of local search results.md>)
 - **Page experience/**
   - [Understanding Google Page Experience](<4 - Ranking and search appearance/Page experience/1 - understadning.md>)
   - [Understanding Core Web Vitals and Google search results](<4 - Ranking and search appearance/Page experience/2 - core-web-vitals.md>)
   - [Interstitials and dialogs](<4 - Ranking and search appearance/Page experience/3 - avoid-intrusive-interstitials.md>)
 - **Ranking Updates/**
-  - [List of Google Search ranking updates](<4 - Ranking and search appearance/Ranking Updates/1 - list.md>)
+  - [List of Google Search Ranking Updates](<4 - Ranking and search appearance/Ranking Updates/1 - list.md>)
   - [Google Search's Core Updates](<4 - Ranking and search appearance/Ranking Updates/2 - core-updates.md>)
   - [Google Search Spam Updates](<4 - Ranking and search appearance/Ranking Updates/3 - spam-updates.md>)
 - **Ranking systems/**
