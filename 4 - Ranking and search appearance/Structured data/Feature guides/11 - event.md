@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/structured-data/event
+synced: 2026-09-15
+---
+
 # Learn About Google Event Schema Markup | Google Search Central
 
 # Event (`Event`) structured data

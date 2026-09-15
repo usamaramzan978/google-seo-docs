@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/specialty/explicit/guidelines
+synced: 2026-09-15
+---
+
 # SEO Guidelines for Explicit Content | Google Search Central
 
 # Guidelines for sites with explicit content

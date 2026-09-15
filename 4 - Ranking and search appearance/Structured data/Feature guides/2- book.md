@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/structured-data/book
+synced: 2026-09-15
+---
+
 # Book Schema for Google Search | Google Search Central
 
 # Book actions (`Book`) structured data

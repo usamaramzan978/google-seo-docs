@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/flexible-sampling
+synced: 2026-09-15
+---
+
 # Flexible Sampling Guidelines | Google Search Central
 
 # Flexible Sampling general guidance

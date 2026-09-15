@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/core-updates
+synced: 2026-09-15
+---
+
 # Google Search's Core Updates | Google Search Central
 
 # Google Search's core updates and your website

@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/specialty/international/localized-versions
+synced: 2026-09-15
+---
+
 # Localized Versions of your Pages | Google Search Central
 
 # Tell Google about localized versions of your page

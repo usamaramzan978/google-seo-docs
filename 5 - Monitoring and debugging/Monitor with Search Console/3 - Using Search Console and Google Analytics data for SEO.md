@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/monitor-debug/google-analytics-search-console
+synced: 2026-09-15
+---
+
 # Using Search Console and Google Analytics Data for SEO | Google Search Central
 
 # Using Search Console and Google Analytics data for SEO

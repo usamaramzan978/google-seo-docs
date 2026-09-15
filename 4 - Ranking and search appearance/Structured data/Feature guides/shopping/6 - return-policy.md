@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/structured-data/return-policy
+synced: 2026-09-15
+---
+
 # Merchant Return Policy Structured Data (MerchantReturnPolicy) | Google Search Central
 
 # Merchant return policy (`MerchantReturnPolicy`) structured data

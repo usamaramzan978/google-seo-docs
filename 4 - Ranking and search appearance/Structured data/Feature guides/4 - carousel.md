@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/structured-data/carousel
+synced: 2026-09-15
+---
+
 # Carousel (ItemList) Structured Data | Google Search Central
 
 # Carousel (`ItemList`) structured data

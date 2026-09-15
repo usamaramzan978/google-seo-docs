@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/structured-data/employer-rating
+synced: 2026-09-15
+---
+
 # Employer Rating (EmployerAggregateRating) Structured Data | Google Search Central
 
 # Employer aggregate rating (`EmployerAggregateRating`) structured data

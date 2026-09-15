@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/structured-data/organization
+synced: 2026-09-15
+---
+
 # Organization (`Organization`) structured data
 
 ![Merchant knowledge panel in Google Search results](https://developers.google.com/static/search/docs/images/organization.png) Merchant knowledge panel in Google Search results

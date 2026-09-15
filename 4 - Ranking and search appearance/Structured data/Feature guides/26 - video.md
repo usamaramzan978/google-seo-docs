@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/structured-data/video
+synced: 2026-09-15
+---
+
 # Video (VideoObject, Clip, BroadcastEvent) Schema Markup | Google Search Central
 
 # Video (`VideoObject`, `Clip`, `BroadcastEvent`) structured data

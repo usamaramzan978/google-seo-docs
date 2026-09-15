@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/monitor-debug/security
+synced: 2026-09-15
+---
+
 # Prevent Abuse on Your Site | Google Search Central
 
 # Preventing and monitoring abuse on your site

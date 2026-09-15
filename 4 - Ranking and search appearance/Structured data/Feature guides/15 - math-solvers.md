@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/structured-data/math-solvers
+synced: 2026-09-15
+---
+
 # Math solver (`MathSolver`) structured data
 
 To help students, teachers, and others with math problems, you can use structured data to

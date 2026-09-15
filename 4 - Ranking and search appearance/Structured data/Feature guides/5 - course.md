@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/structured-data/course
+synced: 2026-09-15
+---
+
 # Use Schema for Course List | Google Search Central
 
 # Course list (`Course`) structured data

@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/structured-data/speakable
+synced: 2026-09-15
+---
+
 # Speakable (BETA) Schema Markup | Google Search Central
 
 # Speakable (`Article`, `WebPage`) structured data (BETA)

@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/structured-data/recipe
+synced: 2026-09-15
+---
+
 # Recipe Schema Markup | Google Search Central
 
 # Recipe (`Recipe`, `HowTo`, `ItemList`) structured data

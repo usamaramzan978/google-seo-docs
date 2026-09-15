@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/structured-data/software-app
+synced: 2026-09-15
+---
+
 # Software App (SoftwareApplication) Schema | Google Search Central
 
 # Software app (`SoftwareApplication`) structured data

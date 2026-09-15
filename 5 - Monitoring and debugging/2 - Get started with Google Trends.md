@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/monitor-debug/trends-start
+synced: 2026-09-15
+---
+
 # Get started with Google Trends | Google Search Central
 
 # Get started with Google Trends

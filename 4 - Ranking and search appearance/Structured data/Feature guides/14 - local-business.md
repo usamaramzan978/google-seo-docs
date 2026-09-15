@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/structured-data/local-business
+synced: 2026-09-15
+---
+
 # Local Business (LocalBusiness) Structured Data | Google Search Central
 
 # Local business (`LocalBusiness`) structured data

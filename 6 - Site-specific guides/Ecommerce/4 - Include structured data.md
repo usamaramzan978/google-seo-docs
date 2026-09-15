@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/specialty/ecommerce/include-structured-data-relevant-to-ecommerce
+synced: 2026-09-15
+---
+
 # Structured Data for Ecommerce Sites | Google Search Central
 
 # Include structured data relevant to ecommerce

@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/ad-network-and-translation
+synced: 2026-09-15
+---
+
 # Ad Networks &amp; Translation Search Features | Google Search Central
 
 # Enabling your ad network to work with translation-related Google Search features

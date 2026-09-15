@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/structured-data/paywalled-content
+synced: 2026-09-15
+---
+
 # Subscription and Paywalled Content Markup | Google Search Central
 
 # Structured data for subscription and paywalled content (`CreativeWork`)

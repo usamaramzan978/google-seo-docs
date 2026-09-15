@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/structured-data/shipping-policy
+synced: 2026-09-15
+---
+
 # Merchant Shipping Policy Structured Data (ShippingService) | Google Search Central
 
 # Merchant shipping policy (`ShippingService`) structured data

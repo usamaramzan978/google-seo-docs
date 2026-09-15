@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/crawling-indexing/sitemaps/video-sitemaps
+synced: 2026-09-15
+---
+
 # Video sitemaps and alternatives
 
 A video sitemap is a [sitemap](https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview)

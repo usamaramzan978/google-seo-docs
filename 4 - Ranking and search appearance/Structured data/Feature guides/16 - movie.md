@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/structured-data/movie
+synced: 2026-09-15
+---
+
 # Mark Up Movies with Structured Data | Google Search Central
 
 # Movie carousel (`Movie`) structured data

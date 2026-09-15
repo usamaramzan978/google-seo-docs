@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/structured-data/discussion-forum
+synced: 2026-09-15
+---
+
 # Discussion Forum (DiscussionForumPosting, SocialMediaPosting) Schema Markup | Google Search Central
 
 # Discussion forum (`DiscussionForumPosting`) structured data

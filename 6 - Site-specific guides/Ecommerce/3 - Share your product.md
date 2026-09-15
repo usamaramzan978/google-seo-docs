@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/specialty/ecommerce/share-your-product-data-with-google
+synced: 2026-09-15
+---
+
 # Share Your Product Data With Google | Google Search Central
 
 # Share your product data with Google

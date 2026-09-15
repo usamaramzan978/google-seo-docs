@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/structured-data/vacation-rental
+synced: 2026-09-15
+---
+
 # Vacation Rental Schema Markup | Google Search Central
 
 # Vacation rental (`VacationRental`) structured data

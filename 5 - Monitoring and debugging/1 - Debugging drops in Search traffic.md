@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/monitor-debug/debugging-search-traffic-drops
+synced: 2026-09-15
+---
+
 # Debug Google Search Traffic Drops | Google Search Central
 
 # Debugging drops in Google Search traffic

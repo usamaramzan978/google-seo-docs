@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/monitor-debug/prevent-abuse
+synced: 2026-09-15
+---
+
 # Prevent User-Generated Spam on Your Site | Google Search Central
 
 # Prevent user-generated spam on your site and platform

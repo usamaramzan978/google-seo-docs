@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/translated-results
+synced: 2026-09-15
+---
+
 # Translated Google Search Results | Google Search Central
 
 # Translated results in Google Search

@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/structured-data/breadcrumb
+synced: 2026-09-15
+---
+
 # How To Add Breadcrumb (BreadcrumbList) Markup | Google Search Central
 
 # Breadcrumb (`BreadcrumbList`) structured data

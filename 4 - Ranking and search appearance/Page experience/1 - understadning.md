@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/page-experience
+synced: 2026-09-15
+---
+
 # Understanding Google Page Experience | Google Search Central
 
 # Understanding page experience in Google Search results

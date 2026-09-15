@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/core-web-vitals
+synced: 2026-09-15
+---
+
 # Understanding Core Web Vitals and Google search results | Google Search Central
 
 # Understanding Core Web Vitals and Google search results

@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/structured-data/product-snippet
+synced: 2026-09-15
+---
+
 # How To Add Product Snippet Structured Data | Google Search Central
 
 # Product snippet (`Product`, `Review`, `Offer`) structured data

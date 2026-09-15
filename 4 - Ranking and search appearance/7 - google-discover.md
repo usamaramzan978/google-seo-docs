@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/google-discover
+synced: 2026-09-15
+---
+
 # Get on Discover | Google Search Central
 
 # Discover and your website

@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/ranking-systems-guide
+synced: 2026-09-15
+---
+
 # A Guide to Google Search Ranking Systems | Google Search Central
 
 # A guide to Google Search ranking systems

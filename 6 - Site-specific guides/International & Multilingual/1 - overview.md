@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/specialty/international
+synced: 2026-09-15
+---
+
 # Overview of International and Multilingual Site Topics | Google Search Central
 
 # Overview of international and multilingual site topics

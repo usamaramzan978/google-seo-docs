@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/establish-business-details
+synced: 2026-09-15
+---
+
 # Add Business Details to Google | Google Search Central
 
 # Establish your business details with Google

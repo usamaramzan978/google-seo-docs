@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/monitor-debug/search-console-start
+synced: 2026-09-15
+---
+
 # How To Use Search Console | Google Search Central
 
 # Get started with Search Console

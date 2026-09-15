@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/structured-data/loyalty-program
+synced: 2026-09-15
+---
+
 # Loyalty Program Structured Data (MemberProgram) | Google Search Central
 
 # Loyalty program (`MemberProgram`) structured data

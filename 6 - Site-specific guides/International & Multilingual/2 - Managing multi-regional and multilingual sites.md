@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites
+synced: 2026-09-15
+---
+
 # Managing Multi-Regional and Multilingual Sites | Google Search Central
 
 # Managing multi-regional and multilingual sites

@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/structured-data/product
+synced: 2026-09-15
+---
+
 # Intro to Product Structured Data on Google | Google Search Central
 
 # Introduction to `Product` structured data

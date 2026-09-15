@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/structured-data/education-qa
+synced: 2026-09-15
+---
+
 # Education Q\&A (`Quiz`, `Question`, and `Answer`) structured data
 
 If you have flashcard pages, you can help students better find answers to educational

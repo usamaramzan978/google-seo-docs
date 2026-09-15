@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/enriched-search-results
+synced: 2026-09-15
+---
+
 # Enriched and Interactive Search Results | Google Search Central
 
 # Enriched search results
