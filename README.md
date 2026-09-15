@@ -22,7 +22,7 @@ Google's SEO documentation is excellent but lives behind a web UI — hard to gr
                                      removals, AMP, site moves, crawler management
 4 - Ranking and search appearance/   Structured data, page experience, ranking systems and updates,
                                      local/translated features, Web Stories, search appearance
-5 - Monitoring and debugging.md/     Search Console, search operators, traffic-drop debugging,
+5 - Monitoring and debugging/     Search Console, search operators, traffic-drop debugging,
                                      abuse prevention
 6 - Site-specific guides/            Ecommerce, explicit content, international & multilingual
 ```
@@ -50,6 +50,7 @@ reads only the specific doc it needs instead of the whole corpus.
    Either form also takes `uninstall` as the first word later on (see
    [Uninstall](#uninstall)) — same command, same menu, just removes instead.
 4. Answer the prompt:
+
    ```
    Where do you want to install the "google-seo-docs" skill?
 
@@ -60,11 +61,13 @@ reads only the specific doc it needs instead of the whole corpus.
 
    Choose one or more, comma-separated [1]:
    ```
+
    - Type `1` for just the current project, `2` for every project on your machine,
      `3` if you're targeting a non-Claude-Code agent, or `4` for all of them.
      Comma-separate to pick more than one, e.g. `1,3`.
    - If you picked an option involving a project (`1` or `3`), it then asks which
      project directory — press Enter to use the current directory, or type a path.
+
 5. Restart Claude Code (or start a new session). The skill now shows up automatically
    — nothing else to configure.
 
@@ -74,6 +77,7 @@ instead of overwriting it.
 **Scripting it instead of answering prompts** (CI, dotfiles, etc.) — works the same
 whether you run it as `npx github:usamaramzan978/google-seo-docs` or, from a clone,
 `node bin/install.js`:
+
 ```bash
 node bin/install.js --project              # this project, current directory
 node bin/install.js --global                # ~/.claude/skills, all projects

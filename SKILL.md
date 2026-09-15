@@ -40,16 +40,16 @@ read every file. Instead:
 
 ## Section map
 
-| Section | Covers |
-|---|---|
-| `1 - Essentials/` | Search Essentials (spam policies, technical requirements) -- the baseline rules for being eligible to appear in Google Search |
-| `2 - SEO fundamentals/` | Starter guide, how Search works, helpful-content guidance, AI-generated content guidance, do-you-need-an-SEO |
-| `3 - Crawling and indexing/` | Sitemaps, crawler management incl. Googlebot, robots.txt, canonicalization, AMP, mobile-first indexing, JavaScript SEO, metadata/meta tags, removals, site moves/redirects |
+| Section                              | Covers                                                                                                                                                                                                                                   |
+| ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `1 - Essentials/`                    | Search Essentials (spam policies, technical requirements) -- the baseline rules for being eligible to appear in Google Search                                                                                                            |
+| `2 - SEO fundamentals/`              | Starter guide, how Search works, helpful-content guidance, AI-generated content guidance, do-you-need-an-SEO                                                                                                                             |
+| `3 - Crawling and indexing/`         | Sitemaps, crawler management incl. Googlebot, robots.txt, canonicalization, AMP, mobile-first indexing, JavaScript SEO, metadata/meta tags, removals, site moves/redirects                                                               |
 | `4 - Ranking and search appearance/` | Title links, snippets, sitelinks, favicons, structured data (incl. per-type feature guides and shopping markup), page experience & Core Web Vitals, ranking systems and update history, local features, translated features, Web Stories |
-| `5 - Monitoring and debugging.md/` | Debugging traffic drops, Search Console usage, search operators, preventing/monitoring site abuse and malware |
-| `6 - Site-specific guides/` | Ecommerce, explicit content, international & multilingual sites |
+| `5 - Monitoring and debugging/`      | Debugging traffic drops, Search Console usage, search operators, preventing/monitoring site abuse and malware                                                                                                                            |
+| `6 - Site-specific guides/`          | Ecommerce, explicit content, international & multilingual sites                                                                                                                                                                          |
 
-Note: `5 - Monitoring and debugging.md/` is a directory (the `.md` is part of the
+Note: `5 - Monitoring and debugging/` is a directory (the `.md` is part of the
 folder name, not a file extension) -- keep it verbatim when constructing paths.
 
 ## Full index
@@ -213,26 +213,26 @@ folder name, not a file extension) -- keep it verbatim when constructing paths.
   - [Best practices for creating Web Stories](<4 - Ranking and search appearance/Web Stories/2 - Best practices for creating Web Stories.md>)
   - [Google Web Story Content Policies](<4 - Ranking and search appearance/Web Stories/3 - Web Story Content Policies.md>)
 
-### 5 - Monitoring and debugging.md
+### 5 - Monitoring and debugging
 
-- [Debug Google Search Traffic Drops](<5 - Monitoring and debugging.md/1 - Debugging drops in Search traffic.md>)
-- [Get started with Google Trends](<5 - Monitoring and debugging.md/2 - Get started with Google Trends.md>)
+- [Debug Google Search Traffic Drops](<5 - Monitoring and debugging/1 - Debugging drops in Search traffic.md>)
+- [Get started with Google Trends](<5 - Monitoring and debugging/2 - Get started with Google Trends.md>)
 - **Debug with search operators/**
-  - [Debugging with Google Search Operators](<5 - Monitoring and debugging.md/Debug with search operators/1 - overview.md>)
-  - [How To Use the Site Search Operator](<5 - Monitoring and debugging.md/Debug with search operators/2 - site: search operator.md>)
-  - [Google Images Search Operators](<5 - Monitoring and debugging.md/Debug with search operators/3 - Google Images search operators.md>)
+  - [Debugging with Google Search Operators](<5 - Monitoring and debugging/Debug with search operators/1 - overview.md>)
+  - [How To Use the Site Search Operator](<5 - Monitoring and debugging/Debug with search operators/2 - site: search operator.md>)
+  - [Google Images Search Operators](<5 - Monitoring and debugging/Debug with search operators/3 - Google Images search operators.md>)
 - **Monitor with Search Console/**
-  - [How To Use Search Console](<5 - Monitoring and debugging.md/Monitor with Search Console/1 - Get started with Search Console.md>)
-  - [How to Create a Search Console Bubble Chart](<5 - Monitoring and debugging.md/Monitor with Search Console/2 - mproving SEO with a Search Console bubble chart.md>)
-  - [Using Search Console and Google Analytics Data for SEO](<5 - Monitoring and debugging.md/Monitor with Search Console/3 - Using Search Console and Google Analytics data for SEO.md>)
-  - [Analyze your social and video platform content performance in Search Console](<5 - Monitoring and debugging.md/Monitor with Search Console/4 - Analyze your social and video platform content.md>)
+  - [How To Use Search Console](<5 - Monitoring and debugging/Monitor with Search Console/1 - Get started with Search Console.md>)
+  - [How to Create a Search Console Bubble Chart](<5 - Monitoring and debugging/Monitor with Search Console/2 - mproving SEO with a Search Console bubble chart.md>)
+  - [Using Search Console and Google Analytics Data for SEO](<5 - Monitoring and debugging/Monitor with Search Console/3 - Using Search Console and Google Analytics data for SEO.md>)
+  - [Analyze your social and video platform content performance in Search Console](<5 - Monitoring and debugging/Monitor with Search Console/4 - Analyze your social and video platform content.md>)
 - **Preventing and monitoring abuse/**
-  - [Prevent Abuse on Your Site](<5 - Monitoring and debugging.md/Preventing and monitoring abuse/1 - overvierw.md>)
-  - [Prevent User-Generated Spam on Your Site](<5 - Monitoring and debugging.md/Preventing and monitoring abuse/2 - Prevent user-generated spam.md>)
-  - [Malware and Unwanted Software Overview](<5 - Monitoring and debugging.md/Preventing and monitoring abuse/3 - Malware and unwanted software.md>)
-  - [How To Prevent Malware Infection](<5 - Monitoring and debugging.md/Preventing and monitoring abuse/4 - Preventing malware infection.md>)
-  - [Social Engineering (Phishing and Deceptive Sites)](<5 - Monitoring and debugging.md/Preventing and monitoring abuse/5 - Social engineering (phishing and deceptive sites).md>)
-  - [Google Safe Browsing Repeat Offenders Policy](<5 - Monitoring and debugging.md/Preventing and monitoring abuse/6 - Google Safe Browsing Repeat Offenders Policy.md>)
+  - [Prevent Abuse on Your Site](<5 - Monitoring and debugging/Preventing and monitoring abuse/1 - overvierw.md>)
+  - [Prevent User-Generated Spam on Your Site](<5 - Monitoring and debugging/Preventing and monitoring abuse/2 - Prevent user-generated spam.md>)
+  - [Malware and Unwanted Software Overview](<5 - Monitoring and debugging/Preventing and monitoring abuse/3 - Malware and unwanted software.md>)
+  - [How To Prevent Malware Infection](<5 - Monitoring and debugging/Preventing and monitoring abuse/4 - Preventing malware infection.md>)
+  - [Social Engineering (Phishing and Deceptive Sites)](<5 - Monitoring and debugging/Preventing and monitoring abuse/5 - Social engineering (phishing and deceptive sites).md>)
+  - [Google Safe Browsing Repeat Offenders Policy](<5 - Monitoring and debugging/Preventing and monitoring abuse/6 - Google Safe Browsing Repeat Offenders Policy.md>)
 
 ### 6 - Site-specific guides
 
