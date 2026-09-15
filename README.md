@@ -16,22 +16,105 @@ Google's SEO documentation is excellent but lives behind a web UI — hard to gr
 ## Structure
 
 ```
-1 - Essentials/                  Search Essentials, technical requirements, spam policies
-2 - SEO fundamentals/            Starter guide, how Search works, helpful content, AI guidance
-3 - Crawling and indexing/       Sitemaps, robots.txt, canonicalization, JavaScript, metadata,
-                                 removals, AMP, site moves, crawler management
-4 - Ranking and search appearance/   (planned)
-5 - Monitoring and debugging/        (planned)
-6 - Site-specific guides/            (planned)
+1 - Essentials/                      Search Essentials, technical requirements, spam policies
+2 - SEO fundamentals/                Starter guide, how Search works, helpful content, AI guidance
+3 - Crawling and indexing/           Sitemaps, robots.txt, canonicalization, JavaScript, metadata,
+                                     removals, AMP, site moves, crawler management
+4 - Ranking and search appearance/   Structured data, page experience, ranking systems and updates,
+                                     local/translated features, Web Stories, search appearance
+5 - Monitoring and debugging.md/     Search Console, search operators, traffic-drop debugging,
+                                     abuse prevention
+6 - Site-specific guides/            Ecommerce, explicit content, international & multilingual
 ```
 
-57 documents so far. Sections 4-6 are still being filled in.
+159 documents. See [SKILL.md](SKILL.md) for a full per-file index.
+
+## Use it as an agent skill
+
+This repo doubles as an installable [Agent Skill](https://code.claude.com/docs/en/skills):
+[SKILL.md](SKILL.md) is a router that indexes every file below by topic, so an agent
+reads only the specific doc it needs instead of the whole corpus.
+
+### Install — Claude Code
+
+1. Push this repo to GitHub if you haven't yet (`git push`) — needed for step 2's
+   `npx github:` form. Already have it cloned locally? Skip to step 3.
+2. Run the installer without cloning:
+   ```bash
+   npx github:usamaramzan978/google-seo-docs
+   ```
+3. Or, from inside a local clone of this repo:
+   ```bash
+   node bin/install.js
+   ```
+4. Answer the prompt:
+   ```
+   Where do you want to install the "google-seo-docs" skill?
+
+     1) This project only     -> .claude/skills/google-seo-docs   (Claude Code)
+     2) All your projects     -> ~/.claude/skills/google-seo-docs (Claude Code, global)
+     3) AGENTS.md reference    -> for Codex, Cursor, Windsurf, or any agent without a skills folder
+     4) All of the above
+
+   Choose one or more, comma-separated [1]:
+   ```
+   - Type `1` for just the current project, `2` for every project on your machine,
+     `3` if you're targeting a non-Claude-Code agent, or `4` for all of them.
+     Comma-separate to pick more than one, e.g. `1,3`.
+   - If you picked an option involving a project (`1` or `3`), it then asks which
+     project directory — press Enter to use the current directory, or type a path.
+5. Restart Claude Code (or start a new session). The skill now shows up automatically
+   — nothing else to configure.
+
+Re-running the installer later is safe: it skips anything already installed
+instead of overwriting it.
+
+**Scripting it instead of answering prompts** (CI, dotfiles, etc.):
+```bash
+node bin/install.js --project              # this project, current directory
+node bin/install.js --global                # ~/.claude/skills, all projects
+node bin/install.js --agents-md             # append reference to ./AGENTS.md
+node bin/install.js --project=../my-app --global --yes   # combine, skip confirmations
+node bin/install.js --help                  # full flag reference
+```
+
+### Install — Claude.ai / Claude Desktop
+
+These don't read your local filesystem, so you upload a zip instead:
+
+1. From inside this repo, zip it (SKILL.md must end up at the zip root):
+   ```bash
+   zip -r ../google-seo-docs.zip . -x '.git/*' -x 'node_modules/*'
+   ```
+2. In Claude.ai or Claude Desktop, go to **Settings → Capabilities → Skills → Upload skill**.
+3. Upload `google-seo-docs.zip`.
+
+### Install — Codex, Cursor, or any other AGENTS.md-based agent
+
+These don't have Claude's skills-folder mechanism, so instead the index gets
+loaded as plain project context:
+
+1. Run the installer (see above) and choose option `3` (or `4`) at the prompt —
+   this appends a line pointing at `SKILL.md` to that project's `AGENTS.md`
+   (creating the file if it doesn't exist).
+2. That's it — the agent reads `AGENTS.md` automatically on every session, so the
+   index is already in context. No separate trigger step.
+
+### Using it once installed
+
+- **Claude Code / Claude.ai / Desktop**: you usually don't have to ask — Claude
+  reads every installed skill's description up front and invokes this one on its
+  own when your prompt is SEO-shaped (robots.txt, schema markup, Core Web Vitals,
+  Search Console, ranking, indexing, etc.). To force it: type `/google-seo-docs`
+  as a slash command in Claude Code, or say "use the google-seo-docs skill".
+- **Codex / Cursor / other AGENTS.md agents**: just ask the SEO question directly;
+  if it doesn't check the docs on its own, point it at `SKILL.md` explicitly.
 
 ## Roadmap
 
 - [ ] Complete sections 4-6
 - [ ] Add source URL + sync date to each file's frontmatter
-- [ ] Convert to installable agent skills
+- [x] Convert to installable agent skills
 
 ## Contributing
 

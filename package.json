@@ -1,0 +1,35 @@
+{
+  "name": "google-seo-docs",
+  "version": "1.0.0",
+  "description": "Google Search Central documentation mirrored as Markdown, packaged as an installable Agent Skill (Claude Code, Claude.ai, and AGENTS.md-based agents like Codex/Cursor).",
+  "license": "MIT",
+  "private": true,
+  "bin": {
+    "google-seo-docs": "bin/install.js"
+  },
+  "scripts": {
+    "install-skill": "node bin/install.js"
+  },
+  "files": [
+    "bin",
+    "SKILL.md",
+    "README.md",
+    "LICENSE",
+    "NOTICE",
+    "tips.md",
+    "1 - Essentials",
+    "2 - SEO fundamentals",
+    "3 - Crawling and indexing",
+    "4 - Ranking and search appearance",
+    "5 - Monitoring and debugging.md",
+    "6 - Site-specific guides"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usamaramzan978/google-seo-docs.git"
+  },
+  "homepage": "https://github.com/usamaramzan978/google-seo-docs#readme"
+}
