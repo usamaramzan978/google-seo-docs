@@ -177,7 +177,7 @@ uploaded as a zip.
 ## Roadmap
 
 - [ ] Complete sections 4-6
-- [ ] Add source URL + sync date to each file's frontmatter
+- [x] Add source URL + sync date to each file's frontmatter
 - [x] Convert to installable agent skills
 
 ## Contributing
