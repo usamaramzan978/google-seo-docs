@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/crawling-indexing/googlebot
+synced: 2026-09-15
+---
+
 # What Is Googlebot | Google Search Central
 
 # Googlebot

@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/structured-data/image-license-metadata
+synced: 2026-09-15
+---
+
 # Google Images SEO: Image Metadata | Google Search Central
 
 # Image metadata in Google Images

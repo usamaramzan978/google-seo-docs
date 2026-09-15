@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/crawling-indexing/canonicalization
+synced: 2026-09-15
+---
+
 # What is canonicalization
 
 Canonicalization is the process of selecting the representative

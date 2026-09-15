@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/crawling-indexing/mobile/mobile-sites-mobile-first-indexing
+synced: 2026-09-15
+---
+
 # Mobile-first Indexing Best Practices | Google Search Central
 
 # Mobile site and mobile-first indexing best practices

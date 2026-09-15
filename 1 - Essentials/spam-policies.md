@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/essentials/spam-policies
+synced: 2026-09-15
+---
+
 # Spam policies for Google web search
 
 In the context of Google Search, spam refers to techniques used to deceive users or manipulate

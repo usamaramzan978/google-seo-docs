@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance
+synced: 2026-09-15
+---
+
 # Overview of Search appearance topics
 
 The topics in this section describe how you can influence how your website appears in Google Search.

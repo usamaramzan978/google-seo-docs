@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/crawling-indexing/valid-page-metadata
+synced: 2026-09-15
+---
+
 # Valid Page Metadata for Google Search | Google Search Central
 
 # Use valid HTML to specify page metadata

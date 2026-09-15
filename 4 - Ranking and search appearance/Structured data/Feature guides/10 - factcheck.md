@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/structured-data/factcheck
+synced: 2026-09-15
+---
+
 # Fact Check (ClaimReview) Markup for Search | Google Search Central
 
 # Fact check (`ClaimReview`) structured data

@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/crawling-indexing/amp/enhance-amp
+synced: 2026-09-15
+---
+
 # Enhance AMP content in Google Search
 
 You can enhance your [AMP](https://developers.google.com/amp) content in Google

@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/crawling/docs/robots-txt/robots-txt-spec
+synced: 2026-09-15
+---
+
 # How Google Interprets the robots.txt Specification | Google Search Central
 
 # How Google interprets the robots.txt specification

@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/fundamentals/creating-helpful-content
+synced: 2026-09-15
+---
+
 # Creating Helpful, Reliable, People-First Content | Google Search Central
 
 # Creating helpful, reliable, people-first content

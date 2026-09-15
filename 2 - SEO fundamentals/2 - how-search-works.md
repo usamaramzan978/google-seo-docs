@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/fundamentals/how-search-works
+synced: 2026-09-15
+---
+
 # In-Depth Guide to How Google Search Works | Google Search Central
 
 # In-depth guide to how Google Search works

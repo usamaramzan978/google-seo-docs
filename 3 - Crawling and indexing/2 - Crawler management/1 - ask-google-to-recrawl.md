@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl
+synced: 2026-09-15
+---
+
 # Ask Google to Recrawl Your Website | Google Search Central
 
 # Ask Google to recrawl your URLs

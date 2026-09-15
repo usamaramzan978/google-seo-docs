@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/crawling-indexing/special-tags
+synced: 2026-09-15
+---
+
 # Meta Tags and Attributes that Google Supports | Google Search Central
 
 # `meta` tags and attributes that Google supports

@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/crawling-indexing/robots/intro
+synced: 2026-09-15
+---
+
 # Robots.txt Introduction and Guide | Google Search Central
 
 # Introduction to robots.txt

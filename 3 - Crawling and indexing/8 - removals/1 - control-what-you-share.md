@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/crawling-indexing/control-what-you-share
+synced: 2026-09-15
+---
+
 # Control the Content You Share on Search | Google Search Central
 
 # Control what you share with Google

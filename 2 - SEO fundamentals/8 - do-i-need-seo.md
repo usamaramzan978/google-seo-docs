@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/fundamentals/do-i-need-seo
+synced: 2026-09-15
+---
+
 # Do you need an SEO?
 
 [Video](https://www.youtube.com/watch?v=NWsyr-D06Ck)

@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/crawling-indexing/sitemaps/image-sitemaps
+synced: 2026-09-15
+---
+
 # Image Sitemaps | Google Search Central
 
 # Image sitemaps

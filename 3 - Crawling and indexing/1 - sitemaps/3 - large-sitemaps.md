@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/crawling-indexing/sitemaps/large-sitemaps
+synced: 2026-09-15
+---
+
 # Manage Your Sitemaps With Sitemap Index Files | Google Search Central
 
 # Manage your sitemaps with a sitemap index file

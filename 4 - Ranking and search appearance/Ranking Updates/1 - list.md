@@ -1,3 +1,8 @@
+---
+source: https://status.search.google.com/products/rGHU1u87FJnkP6W2GwMi/history
+synced: 2026-09-15
+---
+
 # List of Google Search Ranking Updates | Google Search Central
 
 # Google Search Status Dashboard: ranking update history

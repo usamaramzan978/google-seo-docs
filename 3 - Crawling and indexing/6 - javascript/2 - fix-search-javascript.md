@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/crawling-indexing/javascript/fix-search-javascript
+synced: 2026-09-15
+---
+
 # Fix Search-Related JavaScript Problems | Google Search Central
 
 # Fix Search-related JavaScript problems

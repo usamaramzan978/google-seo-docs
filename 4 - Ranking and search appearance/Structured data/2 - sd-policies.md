@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/structured-data/sd-policies
+synced: 2026-09-15
+---
+
 # General structured data guidelines
 
 To be eligible for rich result appearance in Google Search results, structured data shouldn't violate the

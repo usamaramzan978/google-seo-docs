@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/fundamentals/get-started-developers
+synced: 2026-09-15
+---
+
 # SEO Guide for Web Developers | Google Search Central
 
 # Get started with Search: a developer's guide

@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/specialty/ecommerce/help-google-understand-your-ecommerce-site-structure
+synced: 2026-09-15
+---
+
 # Ecommerce Website Navigation Structure | Google Search Central
 
 # Help Google understand your ecommerce website structure

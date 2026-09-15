@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/essentials
+synced: 2026-09-15
+---
+
 # Google Search Essentials (formerly Webmaster Guidelines) | Google Search Central
 
 # Google Search Essentials

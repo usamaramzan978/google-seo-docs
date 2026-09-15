@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/crawling-indexing/troubleshoot-crawling-errors
+synced: 2026-09-15
+---
+
 # Troubleshoot Google Search Crawling Errors | Google Search Central
 
 # Troubleshoot Google Search crawling errors

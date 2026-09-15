@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/crawling-indexing/url-structure
+synced: 2026-09-15
+---
+
 # URL Structure Best Practices for Google Search | Google Search Central
 
 # URL structure best practices for Google Search

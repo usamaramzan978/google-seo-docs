@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/crawling-indexing/remove-information
+synced: 2026-09-15
+---
+
 # Remove Your Site Info from Google | Google Search Central
 
 # Remove a page hosted on your site from Google

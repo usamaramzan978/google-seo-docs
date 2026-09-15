@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/specialty/ecommerce/designing-a-url-structure-for-ecommerce-sites
+synced: 2026-09-15
+---
+
 # Ecommerce URL Structure Best Practices | Google Search Central
 
 # Designing a URL structure for ecommerce websites

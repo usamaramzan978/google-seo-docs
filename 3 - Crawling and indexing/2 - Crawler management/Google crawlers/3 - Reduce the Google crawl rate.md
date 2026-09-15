@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/crawling/docs/crawlers-fetchers/reduce-crawl-rate
+synced: 2026-09-15
+---
+
 # Reduce Google's Crawl Rate | Google Search Central
 
 # Reduce Google's crawl rate

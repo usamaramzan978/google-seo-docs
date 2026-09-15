@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/crawling-indexing/sitemaps/news-sitemap
+synced: 2026-09-15
+---
+
 # Create a News Sitemap | Google Search Central
 
 # News sitemaps

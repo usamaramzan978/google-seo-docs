@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/structured-data/job-posting
+synced: 2026-09-15
+---
+
 # Learn About Job Posting Schema Markup | Google Search Central
 
 # Job posting (`JobPosting`) structured data for Job Search

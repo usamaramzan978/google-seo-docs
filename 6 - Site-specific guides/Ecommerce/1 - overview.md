@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/specialty/ecommerce
+synced: 2026-09-15
+---
+
 # SEO Best Practices for Ecommerce Sites | Google Search Central
 
 # Best practices for ecommerce sites in Google Search

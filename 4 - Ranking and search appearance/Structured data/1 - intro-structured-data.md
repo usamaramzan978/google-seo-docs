@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data
+synced: 2026-09-15
+---
+
 # Intro to How Structured Data Markup Works | Google Search Central
 
 # Introduction to structured data markup in Google Search

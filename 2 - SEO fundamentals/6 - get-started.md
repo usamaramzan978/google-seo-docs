@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/fundamentals/get-started
+synced: 2026-09-15
+---
+
 # Technical SEO Techniques and Strategies | Google Search Central
 
 # Maintaining your website's SEO

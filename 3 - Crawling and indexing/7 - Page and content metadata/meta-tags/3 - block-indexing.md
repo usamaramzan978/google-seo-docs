@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/crawling-indexing/block-indexing
+synced: 2026-09-15
+---
+
 # Block Search Indexing with noindex | Google Search Central
 
 # Block Search indexing with `noindex`

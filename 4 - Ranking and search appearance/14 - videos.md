@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/video
+synced: 2026-09-15
+---
+
 # Video SEO best practices
 
 If you have videos on your site, following these video SEO best practices can help more people

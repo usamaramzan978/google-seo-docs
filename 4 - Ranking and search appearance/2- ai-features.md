@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/ai-features
+synced: 2026-09-15
+---
+
 # AI Features and Your Website | Google Search Central
 
 # AI features and your website

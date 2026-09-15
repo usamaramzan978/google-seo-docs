@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/crawling-indexing/canonicalization-troubleshooting
+synced: 2026-09-15
+---
+
 # Fix canonicalization issues
 
 Even if you explicitly designate a canonical page, Google might choose a different canonical

@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/crawling-indexing/links-crawlable
+synced: 2026-09-15
+---
+
 # SEO Link Best Practices for Google | Google Search Central
 
 # Link best practices for Google

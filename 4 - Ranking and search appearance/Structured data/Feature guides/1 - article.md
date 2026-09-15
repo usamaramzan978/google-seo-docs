@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/structured-data/article
+synced: 2026-09-15
+---
+
 # Learn About Article Schema Markup | Google Search Central
 
 # Article (`Article`, `NewsArticle`, `BlogPosting`) structured data

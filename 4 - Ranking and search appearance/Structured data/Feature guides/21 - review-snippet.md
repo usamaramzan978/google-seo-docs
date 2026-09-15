@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/structured-data/review-snippet
+synced: 2026-09-15
+---
+
 # Review snippet (`Review`, `AggregateRating`) structured data
 
 A review snippet is a short excerpt of a review or a rating from a review website, usually an

@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/publication-dates
+synced: 2026-09-15
+---
+
 # Add a Byline Date to Google Search Results | Google Search Central
 
 # Influence your byline dates in Google Search

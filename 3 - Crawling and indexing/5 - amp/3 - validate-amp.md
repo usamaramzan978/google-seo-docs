@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/crawling-indexing/amp/validate-amp
+synced: 2026-09-15
+---
+
 # Validate your AMP content
 
 After you've [created AMP content](https://developers.google.com/search/docs/guides/enhance-amp), here are

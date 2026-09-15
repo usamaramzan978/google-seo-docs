@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links
+synced: 2026-09-15
+---
+
 # Qualify Outbound Links for SEO | Google Search Central
 
 # Qualify your outbound links to Google

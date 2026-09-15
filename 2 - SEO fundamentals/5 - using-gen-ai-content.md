@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/fundamentals/using-gen-ai-content
+synced: 2026-09-15
+---
+
 # Google Search's Guidance on Generative AI Content on Your Website | Google Search Central
 
 # Google Search's guidance on using generative AI content on your website

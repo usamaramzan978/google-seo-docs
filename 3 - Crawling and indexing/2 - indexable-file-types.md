@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/crawling-indexing/indexable-file-types
+synced: 2026-09-15
+---
+
 # File Types Indexable by Google | Google Search Central
 
 # File types indexable by Google

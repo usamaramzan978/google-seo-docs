@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/structured-data/product-variants
+synced: 2026-09-15
+---
+
 # Product Variant Structured Data (ProductGroup, Product) | Google Search Central
 
 # Product variant structured data (`ProductGroup`, `Product`)

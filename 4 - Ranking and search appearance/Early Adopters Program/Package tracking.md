@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/package-tracking
+synced: 2026-09-15
+---
+
 # Package Tracking on Google | Google Search Central
 
 # Package tracking Early Adopters Program

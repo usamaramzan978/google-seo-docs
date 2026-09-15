@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/title-link
+synced: 2026-09-15
+---
+
 # Influencing Title Links in Google Search | Google Search Central
 
 # Influencing your title links in search results

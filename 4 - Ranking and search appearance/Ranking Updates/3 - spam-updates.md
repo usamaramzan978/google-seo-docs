@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/spam-updates
+synced: 2026-09-15
+---
+
 # Google Search Spam Updates | Google Search Central
 
 # Google Search spam updates and your site

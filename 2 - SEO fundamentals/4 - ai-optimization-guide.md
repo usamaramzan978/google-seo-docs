@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/fundamentals/ai-optimization-guide
+synced: 2026-09-15
+---
+
 # Optimizing your website for generative AI features on Google Search
 
 User preferences are rapidly evolving and people are increasingly gravitating to generative AI

@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/crawling-indexing/amp
+synced: 2026-09-15
+---
+
 # About AMP on Google Search
 
 Google Search indexes [AMP](https://developers.google.com/amp)

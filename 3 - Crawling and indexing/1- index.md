@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/crawling-indexing
+synced: 2026-09-15
+---
+
 # Google Crawling and Indexing | Google Search Central
 
 # Overview of crawling and indexing topics

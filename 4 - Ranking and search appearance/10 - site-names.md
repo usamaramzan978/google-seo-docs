@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/site-names
+synced: 2026-09-15
+---
+
 # Site Names in Google Search | Google Search Central
 
 # Provide a site name to Google Search

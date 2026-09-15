@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/monitor-debug/search-operators/all-search-site
+synced: 2026-09-15
+---
+
 # How To Use the Site Search Operator | Google Search Central
 
 # `site:` search operator

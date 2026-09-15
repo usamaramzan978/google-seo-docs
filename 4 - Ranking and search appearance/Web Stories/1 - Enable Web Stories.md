@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/enable-web-stories
+synced: 2026-09-15
+---
+
 # Enable Web Stories on Google
 
 ![An illustration of a Web Story in Google Search results](https://developers.google.com/static/search/docs/images/web-stories-single-result.png)

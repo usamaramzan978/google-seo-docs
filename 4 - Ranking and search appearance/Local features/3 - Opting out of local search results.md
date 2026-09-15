@@ -1,3 +1,8 @@
+---
+source: https://support.google.com/webmasters/answer/3035947
+synced: 2026-09-15
+---
+
 # Opt Out of Local Search Results and Other Google Properties | Google Search Central
 
 # Opt out of display on local search results and other Google properties

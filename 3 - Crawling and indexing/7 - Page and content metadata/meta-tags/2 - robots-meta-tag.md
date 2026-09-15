@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag
+synced: 2026-09-15
+---
+
 # Robots Meta Tags Specifications | Google Search Central
 
 # Robots `meta` tag, `data-nosnippet`, and `X-Robots-Tag` specifications

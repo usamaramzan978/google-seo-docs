@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap
+synced: 2026-09-15
+---
+
 # Build and submit a sitemap
 
 This page describes how to build a sitemap and make it available to Google. If you're new to

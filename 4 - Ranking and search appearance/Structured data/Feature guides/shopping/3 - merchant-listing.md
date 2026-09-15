@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/structured-data/merchant-listing
+synced: 2026-09-15
+---
+
 # Merchant listing (`Product`, `Offer`) structured data
 
 ![shopping knowledge panel presentation in search results](https://developers.google.com/static/search/docs/images/shopping-knowledge-panel.png)

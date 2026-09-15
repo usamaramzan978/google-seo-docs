@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/structured-data/profile-page
+synced: 2026-09-15
+---
+
 # Profile Page (ProfilePage) Schema Markup | Google Search Central
 
 # Profile page (`ProfilePage`) structured data

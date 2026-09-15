@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls
+synced: 2026-09-15
+---
+
 # How to specify a canonical URL with rel="canonical" and other methods
 
 To specify a [canonical URL](https://developers.google.com/search/docs/crawling-indexing/canonicalization) for

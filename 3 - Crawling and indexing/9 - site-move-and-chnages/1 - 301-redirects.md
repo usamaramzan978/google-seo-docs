@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/crawling-indexing/301-redirects
+synced: 2026-09-15
+---
+
 # Redirects and Google Search
 
 Redirecting URLs is the practice of resolving an existing URL to a different one, effectively

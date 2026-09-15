@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/structured-data/dataset
+synced: 2026-09-15
+---
+
 # Dataset Structured Data | Google Search Central
 
 # Dataset (`Dataset`, `DataCatalog`, `DataDownload`) structured data

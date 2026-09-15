@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/fundamentals/seo-starter-guide
+synced: 2026-09-15
+---
+
 # SEO Starter Guide: The Basics | Google Search Central
 
 # Search Engine Optimization (SEO) Starter Guide

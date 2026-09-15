@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/essentials/technical
+synced: 2026-09-15
+---
+
 # Google Search Technical Requirements | Google Search Central
 
 # Google Search technical requirements

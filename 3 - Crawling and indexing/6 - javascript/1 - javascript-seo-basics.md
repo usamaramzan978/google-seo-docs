@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics
+synced: 2026-09-15
+---
+
 # Understand JavaScript SEO Basics | Google Search Central
 
 # Understand the JavaScript SEO basics
