@@ -49,9 +49,6 @@ read every file. Instead:
 | `5 - Monitoring and debugging/`      | Debugging traffic drops, Search Console usage, search operators, preventing/monitoring site abuse and malware                                                                                                                            |
 | `6 - Site-specific guides/`          | Ecommerce, explicit content, international & multilingual sites                                                                                                                                                                          |
 
-Note: `5 - Monitoring and debugging/` is a directory (the `.md` is part of the
-folder name, not a file extension) -- keep it verbatim when constructing paths.
-
 ## Full index
 
 ### 1 - Essentials
