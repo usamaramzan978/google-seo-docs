@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/crawling-indexing/sitemaps/combine-sitemap-extensions
+synced: 2026-09-15
+---
+
 # How to Combine Sitemap Extensions | Google Search Central
 
 # How to combine sitemap extensions

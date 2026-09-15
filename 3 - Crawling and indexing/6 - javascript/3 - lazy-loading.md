@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/crawling-indexing/javascript/lazy-loading
+synced: 2026-09-15
+---
+
 # Fix Lazy-Loaded Website Content | Google Search Central
 
 # Fix lazy-loaded content

@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/monitor-debug/bubble-chart-analysis
+synced: 2026-09-15
+---
+
 # How to Create a Search Console Bubble Chart | Google Search Central
 
 # Improving SEO with a Search Console bubble chart

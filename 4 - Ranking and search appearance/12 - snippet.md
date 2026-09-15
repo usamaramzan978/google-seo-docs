@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/snippet
+synced: 2026-09-15
+---
+
 # Control your snippets in search results
 
 A _snippet_ is the description or summary part of search result on Google Search and

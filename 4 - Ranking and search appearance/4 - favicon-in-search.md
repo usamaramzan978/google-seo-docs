@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/favicon-in-search
+synced: 2026-09-15
+---
+
 # Define a favicon to show in search results
 
 If your site has a

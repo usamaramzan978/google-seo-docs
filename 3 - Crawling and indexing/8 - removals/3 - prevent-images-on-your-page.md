@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/crawling-indexing/prevent-images-on-your-page
+synced: 2026-09-15
+---
+
 # Remove your own site's images from Google Search | Google Search Central
 
 # Remove images hosted on your site from search results

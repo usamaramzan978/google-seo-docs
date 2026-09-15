@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/monitor-debug/search-operators
+synced: 2026-09-15
+---
+
 # Debugging with Google Search Operators | Google Search Central
 
 # Overview of Google search operators

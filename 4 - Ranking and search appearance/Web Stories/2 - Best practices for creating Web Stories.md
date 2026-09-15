@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/web-stories-creation-best-practices
+synced: 2026-09-15
+---
+
 # Best practices for creating Web Stories
 
 To keep your readers engaged, follow our best practices for creating

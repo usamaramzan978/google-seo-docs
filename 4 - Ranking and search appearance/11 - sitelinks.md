@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/sitelinks
+synced: 2026-09-15
+---
+
 # Learn About What Sitelinks Are | Google Search Central
 
 # Sitelinks

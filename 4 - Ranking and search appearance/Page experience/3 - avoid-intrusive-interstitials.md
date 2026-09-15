@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/avoid-intrusive-interstitials
+synced: 2026-09-15
+---
+
 # Interstitials and dialogs | Google Search Central
 
 # Avoid intrusive interstitials and dialogs

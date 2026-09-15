@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/crawling-indexing/amp/remove-amp
+synced: 2026-09-15
+---
+
 # Remove your AMP pages from Google Search
 
 This page describes how web developers can remove their AMP pages from Google Search.

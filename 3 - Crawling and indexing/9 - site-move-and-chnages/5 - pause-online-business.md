@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/crawling-indexing/pause-online-business
+synced: 2026-09-15
+---
+
 # Temporarily Pause Or Disable Website | Google Search Central
 
 # Temporarily pause or disable a website

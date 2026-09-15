@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/monitor-debug/analyze-social-video-content
+synced: 2026-09-15
+---
+
 # Analyze your social and video platform content performance in Search Console
 
 When you create content on platforms like TikTok, Instagram, X, and YouTube, your audience can also

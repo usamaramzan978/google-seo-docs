@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/monitor-debug/search-operators/image-search
+synced: 2026-09-15
+---
+
 # Google Images Search Operators | Google Search Central
 
 # Google Images search operators

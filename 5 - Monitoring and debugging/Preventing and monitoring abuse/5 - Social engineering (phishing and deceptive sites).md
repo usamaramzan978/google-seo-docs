@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/monitor-debug/security/social-engineering
+synced: 2026-09-15
+---
+
 # Social Engineering (Phishing and Deceptive Sites) | Google Search Central
 
 # Social engineering (phishing and deceptive sites)

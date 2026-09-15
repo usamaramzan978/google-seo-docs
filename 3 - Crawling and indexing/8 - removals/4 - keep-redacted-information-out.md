@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/crawling-indexing/keep-redacted-information-out
+synced: 2026-09-15
+---
+
 # Keep Redacted Information out of Google | Google Search Central
 
 # Keep redacted information out of Google Search

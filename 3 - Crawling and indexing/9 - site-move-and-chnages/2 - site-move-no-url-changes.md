@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/crawling-indexing/site-move-no-url-changes
+synced: 2026-09-15
+---
+
 # Changing Your Web Hosting and SEO | Google Search Central
 
 # Changing your hosting

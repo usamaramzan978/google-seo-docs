@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/visual-elements-gallery
+synced: 2026-09-15
+---
+
 # Visual Elements Gallery of Google Search | Google Search Central
 
 # Visual Elements gallery of Google Search

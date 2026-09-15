@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/specialty/ecommerce/how-to-launch-an-ecommerce-website
+synced: 2026-09-15
+---
+
 # How To Launch an Ecommerce Site on Google | Google Search Central
 
 # How to launch a new ecommerce website

@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/specialty/explicit/troubleshooting
+synced: 2026-09-15
+---
+
 # My Site is Incorrectly Flagged as Explicit in Google Search | Google Search Central
 
 # What to do if your site is incorrectly flagged as explicit in Google Search results

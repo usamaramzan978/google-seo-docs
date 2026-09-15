@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/crawling-indexing/javascript/dynamic-rendering
+synced: 2026-09-15
+---
+
 # Dynamic Rendering as a workaround | Google Search Central
 
 # Dynamic rendering as a workaround

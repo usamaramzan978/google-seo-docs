@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/crawling-indexing/website-testing
+synced: 2026-09-15
+---
+
 # A/B Testing Best Practices for Search | Google Search Central
 
 # Minimize A/B testing impact in Google Search

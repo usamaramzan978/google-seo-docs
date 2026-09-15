@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes
+synced: 2026-09-15
+---
+
 # How to move a site
 
 This document describes how to change the URLs of existing pages on your site while minimizing

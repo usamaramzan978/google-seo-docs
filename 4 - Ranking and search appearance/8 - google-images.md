@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/google-images
+synced: 2026-09-15
+---
+
 # Image SEO Best Practices | Google Search Central
 
 # Google image SEO best practices

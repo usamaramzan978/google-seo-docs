@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/fundamentals/third-party-seo
+synced: 2026-09-15
+---
+
 # Google Search's guidance on using third-party SEO tools, services, and advice
 
 If you're thinking about improving the SEO for your website, you might also be considering

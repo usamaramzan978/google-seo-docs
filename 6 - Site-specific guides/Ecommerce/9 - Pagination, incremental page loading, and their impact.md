@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/specialty/ecommerce/pagination-and-incremental-page-loading
+synced: 2026-09-15
+---
+
 # Pagination Best Practices for Google | Google Search Central
 
 # Pagination, incremental page loading, and their impact on Google Search

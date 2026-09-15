@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/preferred-sources
+synced: 2026-09-15
+---
+
 # Help your readers find your site through preferred sources in Google Search
 
 If you're a website owner, you can help your audience find your publication

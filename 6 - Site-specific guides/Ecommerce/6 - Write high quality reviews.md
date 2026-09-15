@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/specialty/ecommerce/write-high-quality-reviews
+synced: 2026-09-15
+---
+
 # How To Write Reviews | Google Search Central
 
 # Write high quality reviews

@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/monitor-debug/security/safe-browsing-repeat-offenders
+synced: 2026-09-15
+---
+
 # Google Safe Browsing Repeat Offenders Policy | Google Search Central
 
 # Google Safe Browsing Repeat Offenders Policy

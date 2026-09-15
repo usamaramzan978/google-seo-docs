@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/specialty/international/locale-adaptive-pages
+synced: 2026-09-15
+---
+
 # How Google Crawls Locale-Adaptive Pages | Google Search Central
 
 # How Google crawls locale-adaptive pages

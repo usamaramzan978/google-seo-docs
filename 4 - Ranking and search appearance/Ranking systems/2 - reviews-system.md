@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/reviews-system
+synced: 2026-09-15
+---
+
 # Google Search's Reviews System | Google Search Central
 
 # Google Search's reviews system and your website

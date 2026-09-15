@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/top-places-list
+synced: 2026-09-15
+---
+
 # Top Places List Optimization | Google Search Central
 
 # Top Places List

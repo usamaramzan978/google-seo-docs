@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/featured-snippets
+synced: 2026-09-15
+---
+
 # Featured Snippets and Your Website | Google Search Central
 
 # Featured snippets and your website

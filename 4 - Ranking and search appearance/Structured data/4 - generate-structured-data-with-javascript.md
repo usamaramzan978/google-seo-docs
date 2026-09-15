@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/structured-data/generate-structured-data-with-javascript
+synced: 2026-09-15
+---
+
 # Generate Structured Data with JavaScript | Google Search Central
 
 # Generate structured data with JavaScript

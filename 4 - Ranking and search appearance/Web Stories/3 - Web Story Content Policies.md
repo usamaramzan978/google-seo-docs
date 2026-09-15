@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/appearance/web-stories-content-policy
+synced: 2026-09-15
+---
+
 # Google Web Story Content Policies | Google Search Central
 
 # Web Story Content Policies on Google

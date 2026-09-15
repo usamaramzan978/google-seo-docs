@@ -1,3 +1,8 @@
+---
+source: https://developers.google.com/search/docs/specialty/ecommerce/where-ecommerce-data-can-appear-on-google
+synced: 2026-09-15
+---
+
 # Ecommerce Product Data and Content on Google | Google Search Central
 
 # Where ecommerce content can appear on Google
